@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Overlook Medical Clinic</title>
+		<style type="text/css">
+			header, section, footer, aside, nav, article, figure, figcaption {
+				display: block;}
+			body {
+				color: #666666;
+				background-color: #000000;
+				background-image: url("images/background.jpg");
+				background-position: center;
+				font-family: Georgia, serif, sans-serif;
+				line-height: 1.4em;
+				border-color: #000000;}
+			.wrapper {
+				width: 940px;
+				margin: 20px auto 20px auto;
+				border: 2px solid #000000 ;
+				background-color: #d4e7ff;}
+			header {
+				height: 160px;
+				background-image: url("images/header.jpg");
+				font-family: sans-serif;}
+			h1 {
+				text-indent: -9999px;
+				width: 940px;
+				height: 130px;
+				margin: 0px;}
+			nav, footer {
+				clear: both;
+				color: #000000;
+				background-color: #ffffff;
+				font-weight: 600;
+				height: 30px;}
+			nav ul {
+				margin: 0px;
+				padding: 5px 0px 5px 30px;}
+			nav li {
+				display: inline;
+				border-bottom: #000000;
+				margin-right: 40px;}
+			nav li a {
+				color: #000000;}
+			nav li a:hover, nav li a.current{
+				color: #1b21cd;}
+			a{
+				color: #000000;
+				text-decoration: none;
+				text-shadow: #000000;
+			}
+			h1, h2, h3{
+				font-weight: normal;
+				font-weight: bolder;
+                color: #000000;
+				font-family: 'Times New Roman';}
+			h2 {
+				font-family: sans-serif;}
+			h3 {
+				margin: 0px 0px 10px 0px;
+				color: rgb(124, 120, 120);
+				font-size: 14px;
+				font-style: italic}
+			footer {
+				font-size: 80%;
+				padding: 7px 0px 0px 20px;}
+            input[type=date],input[type=text],input[type=time]{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 15px;
+                box-sizing: border-box;
+                border: 2px;
+                border-radius: 4px;}
+            input[type=radio] {
+                padding: 12px 20px;
+                margin: 8px 15px;
+                box-sizing: border-box;
+                border: 2px;
+                border-radius: 4px;}
+            input[type=button]{
+                padding: 12px 20px;
+                margin: 15px 15px;
+                box-sizing: border-box;
+                background-color: #ee1b1b;
+                font-weight: bold;
+                color: #ffffff;
+                float: right;
+            }
+            input[type=text]:focus {
+                border: 2px solid #555;}
+            label.input{
+                width: 300px;
+                font-size: 15px;
+                font-weight: bold;
+                color: #000000;
+                font-family: sans-serif;}
+            div.form{
+                width: 42.5%;
+                padding: 10px;
+                margin: 10px 14px 0px 10px;
+                display: inline-block;}
+            div.form2{
+                width: 49%;
+                margin: 0px 1.08px 0px 1px;
+                display: inline-block;}
+            div.form3{
+                width: 90%;
+                padding: 10px;
+                margin: 10px 14px 0px 10px;
+                resize: none;
+                display: inline-block;}
+            div.final{
+                padding: 10px;
+                justify-content: center;
+            }
+			
+		</style>
+        
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Overlook Medical Clinic</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="booking.html" class="current">BOOK NOW</a></li>
+					</ul>
+				</nav>
+			</header>
+            <div class="form">
+                <label class="input">First Name</label>
+                <input type="text" name="firstname" placeholder="First name">
+            </div>
+            <div class="form">
+                <label class="input">Last Name</label>
+                <input type="text" name="lastname" placeholder="Last name">
+            </div>
+            <div class="form">
+                <label class="input">Contact Number</label>
+                <input type="text" name="contactNum" placeholder="Contact number">
+            </div>
+            <div class="form">
+                <label class="input">Gender</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </div>
+            <div class="form">
+                <label class="input">Address</label>
+                <input type="text" name="address1" placeholder="Street address">
+                <div class="form2">
+                <input type="text" name="address2" placeholder="Postal code">
+                </div>
+                <div class="form2">
+                <input type="text" name="address3" placeholder="City">
+                </div>
+                <input type="text" name="address1" placeholder="Country">
+            </div>
+            <div class="form">
+                <label class="input">Date of birth</label>
+                <input type="date" name="date">
+            </div>
+            <div class="form">
+                <label class="input">Choose Appointment Date</label>
+                <input type="date" name="date">
+            </div>
+            <div class="form">
+                <label class="input">Choose Appointment Time</label>
+                <input type="time" name="time">
+            </div>
+            <div class="form3">
+                <label class="input">Description of problem</label>
+                <input type="text" name="problemDesc" placeholder="Description of problem">
+            </div>
+            <div class="final">
+                <input type="button" value="Book">
+            </div>
+			<footer>
+				&copy; <i>2023 Fuumaraed</i>
+			</footer>
+		</div>
+	</body>
+</html>
